@@ -1,0 +1,67 @@
+# Environment & Private secrets
+.env
+.env.*
+!.env.example
+
+# Data files & Datasets
+data/
+*.nc
+*.csv
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.joblib
+*.dat
+*.npy
+*.npz
+*.parquet
+*.db
+*.sqlite
+*.sqlite3
+
+# Model Weights & Binaries
+*.pt
+*.pth
+*.bin
+*.onnx
+*.weights
+
+# Node / Frontend
+node_modules/
+dist/
+dist-ssr/
+build/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Python / Backend
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.venv/
+venv/
+ENV/
+env/
+.pytest_cache/
+.coverage
+.cache/
+
+# Cache directories
+**/cache/
+.cache/
+
+# IDE / OS
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

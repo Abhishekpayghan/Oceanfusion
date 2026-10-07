@@ -1,0 +1,30 @@
+:root{
+  --abyss:#040c14;
+  --deep:#081c2c;
+  --panel:#0b2436;
+  --line:#153649;
+  --foam:#dff3f6;
+  --mist:#8fb4c4;
+  --current:#20d3c2;
+  --current-dim:#0e6e66;
+  --warn:#ff9a56;
+  --error:#ff5d6c;
+  --font: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --mono: "Consolas", "SFMono-Regular", Menlo, monospace;
+}
+*{box-sizing:border-box;}
+html,body,#root{margin:0;height:100%;background:var(--abyss);color:var(--foam);font-family:var(--font);overflow:hidden;}
+
+select, button, input{font-family:var(--font);}
+select, button.gbtn{
+  width:100%;background:var(--deep);color:var(--foam);border:1px solid var(--line);
+  padding:8px 9px;border-radius:5px;font-size:13px;
+}
+select{cursor:pointer;}
+button.gbtn{cursor:pointer;transition:border-color .15s;}
+button.gbtn:hover{border-color:var(--current);}
+button.primary{background:var(--current-dim);border-color:var(--current);color:#eafffb;font-weight:600;}
+button.primary:hover{background:var(--current);color:#03211d;}
+
+::-webkit-scrollbar{width:8px;}
+::-webkit-scrollbar-thumb{background:var(--line);border-radius:4px;}
